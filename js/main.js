@@ -20,8 +20,14 @@ function moveKoala(){
     let differenceY = koala.offsetTop - mouseY
     let distance = Math.sqrt(differenceX*differenceX + differenceY*differenceY)
 
-    koala.style.left = koala.offsetLeft - (differenceX/distance * 1)+'px'
-    koala.style.top =  koala.offsetTop - (differenceY/distance*1)+'px'
+    let deg = Math.atan2(mouseY - koala.offsetTop, mouseX - koala.offsetLeft)
+
+    console.log(koala.style.top)
+
+    koala.style.left = koala.offsetLeft - (differenceX/distance)+'px'
+    koala.style.top =  koala.offsetTop - (differenceY/distance)+'px'
+
+    koala.style.transform = `translate(-50%,-50%) rotate(${deg}rad)`
 }
 
 setInterval(() => requestAnimationFrame(moveKoala), 1)
