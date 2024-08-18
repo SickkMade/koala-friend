@@ -61,7 +61,7 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-#koala > img{
+.koala > img{
      width:50px;
 }
 
@@ -75,7 +75,7 @@ footer {
      pointer-events: none;
 }
 
-#koala{
+.koala{
      position:absolute;
      transform: translate(-50%, -50%);
 }
