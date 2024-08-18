@@ -59,10 +59,18 @@ footer {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-img{
+#koala > img{
      width:50px;
+}
+
+#bg{
+     position: absolute;
+     left:50%;
+     top:50%;
+     transform: translate(-50%, -50%);
 }
 
 #koala{
      position:absolute;
+     transform: translate(-50%, -50%);
 }
