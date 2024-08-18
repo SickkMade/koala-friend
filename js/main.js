@@ -22,8 +22,6 @@ function moveKoala(){
 
     let deg = Math.atan2(mouseY - koala.offsetTop, mouseX - koala.offsetLeft)
 
-    console.log(koala.style.top)
-
     koala.style.left = koala.offsetLeft - (differenceX/distance)+'px'
     koala.style.top =  koala.offsetTop - (differenceY/distance)+'px'
 
